@@ -1,0 +1,26 @@
+# ── Web framework ──────────────────────────────────────────────
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+pydantic==2.10.3
+
+# ── LangChain (RAG framework) ───────────────────────────────────
+langchain==0.3.11
+langchain-community==0.3.11
+langchain-core==0.3.24
+
+# ── Vector database ─────────────────────────────────────────────
+chromadb==0.5.23
+
+# ── Embeddings (free, runs locally) ─────────────────────────────
+sentence-transformers==3.3.1
+torch>=2.9.0               # CPU version; installs latest compatible version
+
+# ── Keyword search ───────────────────────────────────────────────
+rank-bm25==0.2.2
+
+# ── LLM client ──────────────────────────────────────────────────
+google-generativeai>=0.8.0
+
+# ── Utilities ────────────────────────────────────────────────────
+python-dotenv==1.0.1
+gitpython==3.1.43
