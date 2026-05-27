@@ -1,4 +1,4 @@
-# 🐱 Gitty — AI-Powered GitHub Repo & Local Codebase Reader
+#  Gitty — AI-Powered GitHub Repo & Local Codebase Reader
 
 [![Python](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
@@ -11,33 +11,39 @@ No more spending hours reading through unfamiliar codebases. Point Gitty at any 
 
 ---
 
-## 📸 Showcase & User Interface
+##  Showcase & User Interface
 
 Here is a visual walkthrough of Gitty in action. You can save your screenshots inside the [`assets/`](./assets/) folder with the names below to render them on GitHub:
 
 ### 1. Landing Page (Empty State)
 When you first open Gitty, you are greeted with a beautiful glassmorphic dark-theme UI. It checks if the backend is running, displays suggestion chips, and indicates if the server is offline or online.
-![Gitty Empty State](./assets/01_empty_state.png)
+!<img width="1335" height="599" alt="Screenshot (31)" src="https://github.com/user-attachments/assets/949498fa-4786-46a2-8ec9-8aefacd9da57" />
+
 
 ### 2. Indexing a Project
 Simply paste the path to your local folder. Gitty automatically walks the directory, filters out junk files, chunks the code, generates embeddings, and saves them to a local database.
-![Gitty Indexing](./assets/02_indexing.png)
+!<img width="1327" height="599" alt="Screenshot (30)" src="https://github.com/user-attachments/assets/aaac13b1-042a-42aa-840b-d9688c9f4901" />
 
 ### 3. High-Level Repository Overview
 Ask Gitty broad questions like *"what is this repo about"* or *"explain the structure."* It reads the files, summarizes the project, and references the exact files and lines of code it analyzed.
-![Repository Overview](./assets/03_overview.png)
+!<img width="1351" height="599" alt="Screenshot (32)" src="https://github.com/user-attachments/assets/b0e2ef97-274f-4ea9-80c9-0f856f2666c6" />
+
+
 
 ### 4. Technical Architecture Questions
 Ask specific architectural questions. Here, Gitty explains how the codebase handles real-time coordinates using Socket.io, showing code snippets and file paths.
-![Technical Architecture Query](./assets/04_pipeline.png)
+!<img width="1357" height="595" alt="Screenshot (33)" src="https://github.com/user-attachments/assets/22d860c3-9ab4-4879-9e22-f5e06855df2f" />
+
 
 ### 5. Detailed Code Workflows
 Ask Gitty to trace complex workflows across multiple files. It breaks down the workflow step-by-step with file names, socket events, and corresponding logic.
-![Detailed Workflow Explanation](./assets/05_workflow.png)
+!<img width="1359" height="605" alt="Screenshot (35)" src="https://github.com/user-attachments/assets/ba86f8c5-f516-46a9-8dfe-7d493475b3f0" />
+<img width="1353" height="593" alt="Screenshot (34)" src="https://github.com/user-attachments/assets/f52eb0b2-24ea-40fd-b1f9-4fa38ac178b5" />
+
 
 ---
 
-## 🧠 How Gitty Works (Under the Hood)
+##  How Gitty Works (Under the Hood)
 
 Gitty uses a state-of-the-art **Hybrid Search + Reranking RAG pipeline** to ensure Gemini always receives the most relevant parts of your code.
 
@@ -69,7 +75,7 @@ graph TD
 
 ---
 
-## ⚡ Quick Start
+##  Quick Start
 
 ### Prerequisites
 *   **Python 3.11** (Recommended)
@@ -118,7 +124,7 @@ Navigate to the `frontend/` folder and double-click **`index.html`** to open the
 
 ---
 
-## 🔌 API Reference
+##  API Reference
 
 Gitty exposes a clean REST API using FastAPI. You can access the interactive Swagger documentation at `http://localhost:8000/docs`.
 
@@ -131,7 +137,7 @@ Gitty exposes a clean REST API using FastAPI. You can access the interactive Swa
 
 ---
 
-## 🛠 Project Structure
+##  Project Structure
 
 ```text
 gitty/
@@ -152,5 +158,5 @@ gitty/
 
 ---
 
-## 📝 License
+## License
 This project is licensed under the MIT License. Feel free to use and modify it.
